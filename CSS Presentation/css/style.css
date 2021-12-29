@@ -1,1 +1,213 @@
-Style made for the website
+body {
+  color: #191919;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+  color: #548cac;
+  line-height: 2.6;
+}
+
+h2 {
+  color: #433520;
+  font-weight: normal;
+}
+
+h3 {
+  color: #C84B31;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #8E8B82;
+  border-width: 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 3rem;
+}
+
+p {
+  line-height: 2;
+}
+
+.icons {
+  width: 40px;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  border-bottom-width: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.intro {
+  margin: auto;
+  width: 30%;
+}
+
+.middle-container {
+  background-color: #F0ECE3;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.skill-row1 {
+  width: 50%;
+  margin: 100px auto;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+.skill-row2 {
+  width: 50%;
+  margin: 100px auto;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+.skill-machine {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.skill-web {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.machine-skill {
+  text-align: left;
+}
+
+.web-skill {
+  text-align: left;
+}
+
+.btn {
+  background: #F0ECE3;
+  background-image: -webkit-linear-gradient(top, #F0ECE3, #C7B198);
+  background-image: -moz-linear-gradient(top, #F0ECE3, #C7B198);
+  background-image: -ms-linear-gradient(top, #F0ECE3, #C7B198);
+  background-image: -o-linear-gradient(top, #F0ECE3, #C7B198);
+  background-image: linear-gradient(to bottom, #F0ECE3, #C7B198);
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  border-radius: 3rem;
+  font-family: Georgia;
+  color: #C84B31;
+  font-size: 32px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #F0ECE3;
+  background-image: -webkit-linear-gradient(top, #F0ECE3, #ECB365);
+  background-image: -moz-linear-gradient(top, #F0ECE3, #ECB365);
+  background-image: -ms-linear-gradient(top, #F0ECE3, #ECB365);
+  background-image: -o-linear-gradient(top, #F0ECE3, #ECB365);
+  background-image: linear-gradient(to bottom, #F0ECE3, #ECB365);
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #ECDBBA;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-link:link {
+  color: #064663;
+  font-family: 'Monserrat', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  margin: auto 20px;
+}
+
+.footer-link:visited {
+  color: #1A374D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #6998AB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#top-cloud {
+  position: absolute;
+  margin: 3rem 0 0 23rem;
+}
+
+#title {
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+#presentation {
+  color: #E4F9F5;
+  background-color: #ECB365;
+  border-radius: 3rem;
+  display: inline-block;
+  font-size: 2.5rem;
+  width: 23rem;
+}
+
+#bottom-cloud {
+  position: absolute;
+  left: 15rem;
+}
+
+#mountain {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  top: 2.1875rem;
+}
+
+#doctor_icon {
+  position: relative;
+  bottom: 2.5rem;
+  right: 10.625rem;
+}
+
+#computer_icon {
+  position: relative;
+  bottom: 2.5rem;
+  left: 10.625rem;
+}
+
+#python-icon {
+  position: absolute;
+  margin-left: 20px;
+}
+
+#bottom-text {
+  line-height: 2;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 30%;
+}
+
+#bottom-name {
+  margin-bottom: 0;
+  line-height: 2;
+  color: #C84B31;
+}
