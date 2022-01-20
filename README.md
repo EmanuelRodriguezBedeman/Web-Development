@@ -7,6 +7,8 @@ Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/CSS%20Pre
 
 Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Tindog%20Bootstrap%205/index.html) to see the **Tindog Website** made with **Bootstrap** 🐶
 
-Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Dice%20Game/dice.html) to play the **Dice Game** that I made! 🎲
+Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Dice%20Game/dice.html) to play the **Dice Game** that I made! 🎲 (Made with: JS, CSS, HTML)
 
-Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Drum%20kit/index.html) to play with the **Drum Kit** 🥁
+Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Drum%20kit/index.html) to play with the **Drum Kit** 🥁 (Made with: JS, CSS, HTML)
+
+Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Simon%20Game/index.html) to play **Simon Game** 🗣 (Made with: JQuery, JS, CSS; HTML)
