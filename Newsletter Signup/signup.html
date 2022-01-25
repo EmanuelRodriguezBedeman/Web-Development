@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Signup page project">
+    <meta name="author" content="Emanuel">
+    <title>Newsletter Signup</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form action="/" method="post">
+            <img class="mb-4" src="images/email.png" alt="" width="80" height="80">
+            <h1 class="h3 mb-3 fw-normal">Sign Up to the Newsletter!</h1>
+
+            <div class="form-floating">
+                <input type="text" name="firstName" class="form-control" placeholder="firstName" required autofocus>
+                <label for="floatingName">First Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text"  name="lastName" class="form-control middle" placeholder="lastName" required>
+                <label for="floatingLastname">Last Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="email"  name="email" class="form-control" placeholder="email@example.com">
+                <label for="floatingMail">Email</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Me Up!</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+        </form>
+    </main>
+
+</body>
+
+</html>
