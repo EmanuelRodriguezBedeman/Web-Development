@@ -1,0 +1,21 @@
+<%- include("parcials/header") -%>
+
+<h1>Home</h1>
+<p><%=startingContent %></p>
+
+    <% newEntries.forEach(function(entry) { %>
+        <h1> <%= entry.title; %> </h1> 
+        <% if (entry.content.length > 100) { %>
+        <p>
+             <%= entry.content.substring(0, 100) + "..." %> 
+             <a href= <%= "/posts/" + entry.title.replace(' ', '-'); %> >Read More</a>
+        </p>
+        <% } else { %>
+        <p> 
+            <%= entry.content; %> 
+            <a href= <%= "/posts/" + entry.title.replace(' ', '-'); %> >Read More</a> 
+        </p>
+        <% } %>
+    <% }); %>
+
+<%- include("parcials/footer") -%>
