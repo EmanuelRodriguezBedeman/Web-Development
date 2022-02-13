@@ -15,4 +15,4 @@ Click [HERE](https://emanuelrodriguezbedeman.github.io/Web-Development/Simon%20G
 
 Click [HERE](https://newsletter-signup753.herokuapp.com/) to checkout my Newsletter Subscription Webapp example 🗞📰 (_Made with: Weather API, Node.js, JQuery, JS, CSS, HTML_)
 
-Click [HERE](https://todolist-erb.herokuapp.com/) to checkout my To Do List Webapp example 📝 (_Made with: MongoDB, Node.js, JQuery, JS, CSS, HTML_)
+Click [HERE](https://todolist-erb.herokuapp.com/) to checkout my To Do List Webapp example 📝 (_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, CSS, HTML_)
