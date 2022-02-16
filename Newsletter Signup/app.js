@@ -30,9 +30,9 @@ app.get("/", function (req, res) {
 //Setting up MailChimp
 mailchimp.setConfig({
     //*****************************ENTER YOUR API KEY HERE******************************
-    apiKey: "26610cfd071b297c52dd4f59b3b3410f-us20",
+    apiKey: "API-KEY",
     //*****************************ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER******************************
-    server: "us20"
+    server: "PREFIX"
 });
 //As soon as the sign in button is pressed execute this
 app.post("/", function (req, res) {
