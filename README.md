@@ -1,20 +1,20 @@
-# _Web-Development Table of content._
+# _Table of content._
 Projects made while I'm doing a Web Development bootcamp by Angela Yu.
 
 Click on the name of the projects to check them out!
 
-[HTML Resume](https://emanuelrodriguezbedeman.github.io/Web-Development/HTML%20Resume/index.html) 📄
+ - [HTML Resume](https://emanuelrodriguezbedeman.github.io/Web-Development/HTML%20Resume/index.html)   📄
 
-[Presentation page](https://emanuelrodriguezbedeman.github.io/Web-Development/CSS%20Presentation/index.html) **made with _CSS_** 🎨
+ - [Presentation page](https://emanuelrodriguezbedeman.github.io/Web-Development/CSS%20Presentation/index.html) **made with _CSS_** 🎨
 
-[Tindog Website](https://emanuelrodriguezbedeman.github.io/Web-Development/Tindog%20Bootstrap%205/index.html) made with **_Bootstrap_** 🐶
+ - [Tindog Website](https://emanuelrodriguezbedeman.github.io/Web-Development/Tindog%20Bootstrap%205/index.html) made with **_Bootstrap_** 🐶
 
-Play a [Dice Game](https://emanuelrodriguezbedeman.github.io/Web-Development/Dice%20Game/dice.html) that I made! 🎲 (_Made with: JS, CSS, HTML_)
+ - Play a [Dice Game](https://emanuelrodriguezbedeman.github.io/Web-Development/Dice%20Game/dice.html) that I made! 🎲 (_Made with: JS, CSS, HTML_)
 
-Play with the [Drum Kit](https://emanuelrodriguezbedeman.github.io/Web-Development/Drum%20kit/index.html) 🥁 (_Made with: JS, CSS, HTML_)
+ - Play with the [Drum Kit](https://emanuelrodriguezbedeman.github.io/Web-Development/Drum%20kit/index.html) 🥁 (_Made with: JS, CSS, HTML_)
 
-Play [Simon Game](https://emanuelrodriguezbedeman.github.io/Web-Development/Simon%20Game/index.html) 🗣 (_Made with: JQuery, JS, CSS, HTML_)
+ - Play [Simon Game](https://emanuelrodriguezbedeman.github.io/Web-Development/Simon%20Game/index.html) 🗣 (_Made with: JQuery, JS, CSS, HTML_)
 
-[Newsletter Subscription Webapp example](https://newsletter-signup753.herokuapp.com/) 🗞📰 (_Made with: Weather API, Express, Node.js, JQuery, JS, CSS, HTML_)
+ - [Newsletter Subscription Webapp example](https://newsletter-signup753.herokuapp.com/) 🗞📰 (_Made with: Weather API, Express, Node.js, JQuery, JS, CSS, HTML_)
 
-[To Do List Webapp](https://todolist-erb.herokuapp.com/) 📝 (_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, CSS, HTML_)
+ - [To Do List Webapp](https://todolist-erb.herokuapp.com/) 📝 (_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, CSS, HTML_)
