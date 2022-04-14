@@ -1,7 +1,7 @@
 # _Table of content._
 Projects made while I'm doing a Web Development bootcamp by Angela Yu.
 
-Click on the name of the projects to check them out!
+Click on the name of the project to check it out!
 
  - [HTML Resume](https://emanuelrodriguezbedeman.github.io/Web-Development/HTML%20Resume/index.html)   📄
 
