@@ -1,0 +1,31 @@
+<%- include("parcials/header") -%>
+
+<h1 class="my-3">Home</h1>
+<p><%=startingContent %></p>
+
+    <% newEntries.forEach(function(entry) { %>
+        <div class="my-2">
+            <h1 class="d-inline mt-5">
+                <%= entry.title; %>
+            </h1>
+            <form class="d-inline" action="/delete" method="post">
+                <button type="submit" name="deleteButton" value="<%= entry._id %>" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete Journal">
+                    <i class="bi bi-trash" data-toggle="tooltip"></i>
+                </button>
+            </form>
+        </div>
+        
+        <% if (entry.content.length > 100) { %>
+        <p>
+             <%= entry.content.substring(0, 100) + "..." %> 
+             <a href= <%= "/posts/" + entry._id %> >Read More</a>
+        </p>
+        <% } else { %>
+        <p> 
+            <%= entry.content; %> 
+            <a href= <%= "/posts/" + entry._id %> >Read This</a> 
+        </p>
+        <% } %>
+    <% }); %>
+
+<%- include("parcials/footer") -%>
