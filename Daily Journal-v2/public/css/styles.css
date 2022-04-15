@@ -17,19 +17,16 @@
     color: #1abc9c !important;
 }
 
-/* i {
-    color: grey;
-    font-size: 1.1rem;
-    opacity: 0.5;
-    margin: 0;
-    padding: 0;
+/* Style for the dark mode switch switch */
+
+.form-switch .form-check-input {
+    height: 1.5em;
+    width: 3em;
 }
 
-i:hover {
-    font-size: 1.1rem;
-    color: black;
-    opacity: 1;
-} */
+body {
+    margin-bottom: 30px;
+}
 
 button {
     color: grey;
@@ -42,10 +39,6 @@ button {
 button:hover {
     background-color: white;
     color: black;
-}
-
-body {
-    margin-bottom: 30px;
 }
 
 .footer {
