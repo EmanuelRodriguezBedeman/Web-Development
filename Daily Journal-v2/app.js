@@ -22,7 +22,6 @@ async function main() {
     await mongoose.connect('mongodb://localhost:27017/PostsDB');
 };
 
-
 // Creates the schema of the DB
 const postSchema = new mongoose.Schema({
     title: {
