@@ -19,6 +19,12 @@
 
 /* Start of switch style */
 
+.darkSwitch{
+    position: absolute;
+    right: 1rem;
+    bottom: 5rem;
+}
+
 .form-switch .form-check-input {
     height: 1.5em;
     width: 3em;
@@ -32,13 +38,14 @@
 .switch-label {
     width: 3.125rem;
     height: 1.625rem;
-    background-color: #e9ecef;
+    background-color: #2f4255;
     display: flex;
     border-radius: 3.125rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0.313rem;
-    padding-left: 0.188rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.3rem;
+    padding-left: 0.1rem;
     position: relative;
     transform: scale(1.5);
     cursor: pointer;
@@ -50,29 +57,33 @@
     background-color: white;
     position: absolute;
     top: 0.125rem;
-    left: 0.125rem;
     border-radius: 50%;
     transition: transform 0.2s linear;
+    /* border: 0.5px solid black; */
 }
 
 .bi-moon {
-    background-color: #171010;
     border-radius: 1rem;
-    padding-left: 0.20rem;   
+    padding-left: 0.20rem;
+    margin-bottom: 0.063rem;
     color: white;
     font-weight: bold;
     width: 1.15rem;
     height: 1.15rem;
+    margin-right: 0.063rem;
+    /* margin-bottom: 0.125rem; */
+    top: 50%;
 }
 
 .bi-sun {
-    background-color: #CCCCCC;
     border-radius: 1rem;
-    padding-left: 0.20rem;    
     color: yellow;
     font-weight: bold; 
     width: 1.15rem;
     height: 1.15rem;
+    margin-right: 0.063rem;
+    margin-bottom: 0.125rem;
+    top: 50%;
 }
 
 /* Switch style end */
