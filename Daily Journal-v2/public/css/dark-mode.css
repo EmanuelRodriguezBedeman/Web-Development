@@ -10,13 +10,29 @@ body.dark {
 }
 
 body.dark button {
-    color: #DBD8E3;
+    color: #999999;
     background-color: #27241D;
 }
 
 body.dark button:hover {
     background-color: #27241D;
     color: #FAEDF0;
+}
+
+body.dark a{
+    color: #2f4255;
+}
+
+body.dark a:hover{
+    color: #10161c;
+}
+
+body.dark a {
+    color: #00A2C7;
+}
+
+body.dark a:hover {
+    color: #0092B3;
 }
 
 nav.dark {
@@ -36,53 +52,14 @@ footer.dark p {
     color: #433E37;
 }
 
-.switch-input {
-    opacity: 0;
-    position: absolute;
-}
-
-.switch-label {
-    width: 50px;
-    height: 26px;
-    background-color: #e9ecef;
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-}
-
 .switch-label.dark {
     background-color: #27241D;
 }
 
-.ball {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
+.ball.dark {
+    background-color: #423F3E;
 }
 
 .switch-input:checked+.switch-label .ball {
     transform: translateX(24px);
-}
-
-.bi-moon {
-    color: white;
-    font-weight: bold;
-    width: 1.15rem;
-    height: 1.15rem;
-}
-
-.bi-sun {
-    color: yellow;
-    font-weight: bold; 
-    width: 1.15rem;
-    height: 1.15rem;
 }
