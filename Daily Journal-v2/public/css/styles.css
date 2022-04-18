@@ -1,39 +1,84 @@
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+    font-size: 0.75rem;
+    letter-spacing: 0.313rem;
 }
 
 .navbar-nav li a:hover {
     color: #2f4255 !important;
 }
 
-/* Style for the dark mode switch */
+/* Start of switch style */
 
 .form-switch .form-check-input {
     height: 1.5em;
     width: 3em;
 }
 
+.switch-input {
+    opacity: 0;
+    position: absolute;
+}
+
+.switch-label {
+    width: 3.125rem;
+    height: 1.625rem;
+    background-color: #e9ecef;
+    display: flex;
+    border-radius: 3.125rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.313rem;
+    padding-left: 0.188rem;
+    position: relative;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.ball {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: white;
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.bi-moon {
+    background-color: #171010;
+    border-radius: 1rem;
+    padding-left: 0.20rem;   
+    color: white;
+    font-weight: bold;
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.bi-sun {
+    background-color: #CCCCCC;
+    border-radius: 1rem;
+    padding-left: 0.20rem;    
+    color: yellow;
+    font-weight: bold; 
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+/* Switch style end */
+
 body {
-    margin-bottom: 30px;
-}
-
-body a{
-    color: #2f4255;
-}
-
-body a:hover{
-    color: #10161c;
+    margin-bottom: 1.875rem;
 }
 
 button {
@@ -54,14 +99,14 @@ button:hover {
     text-align: center;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     background-color: #2f4255;
 }
 
 .footer p {
     font-family: 'Lora', serif;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 1.313rem;
+    padding-bottom: 1.313rem;
     font-size: 0.85rem;
     color: #E0E0E0;
 }
