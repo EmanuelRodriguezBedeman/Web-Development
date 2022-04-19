@@ -13,11 +13,11 @@
     letter-spacing: 0.313rem;
 }
 
-.navbar-nav li a:hover {
+.navbar-light ul.nav a:hover {
     color: #2f4255 !important;
 }
 
-/* Start of switch style */
+/* Start of light switch style */
 
 .darkSwitch{
     position: absolute;
@@ -59,7 +59,6 @@
     top: 0.125rem;
     border-radius: 50%;
     transition: transform 0.2s linear;
-    /* border: 0.5px solid black; */
 }
 
 .bi-moon {
@@ -71,7 +70,6 @@
     width: 1.15rem;
     height: 1.15rem;
     margin-right: 0.063rem;
-    /* margin-bottom: 0.125rem; */
     top: 50%;
 }
 
@@ -86,7 +84,11 @@
     top: 50%;
 }
 
-/* Switch style end */
+.switch-input:checked+.switch-label .ball {
+    transform: translateX(24px);
+}
+
+/* Light Switch style end */
 
 body {
     margin-bottom: 1.875rem;
