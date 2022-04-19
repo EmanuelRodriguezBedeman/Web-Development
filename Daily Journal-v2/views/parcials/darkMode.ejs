@@ -1,38 +1,22 @@
 <div class="d-inline darkSwitch">
 <!-- Dark Mode Switch: -->
 <div class="form-check form-switch">
-    <input class="switch-input" type="checkbox" id="darkSwitch" onChange="goDark()">
-    <label id="switch" class="switch-label" for="darkSwitch">
+    <input class="switch-input" type="checkbox" id="switch" onChange="goDark()">
+    <label id="switch" class="switch-label" for="switch">
         <i class="bi bi-moon"></i>
         <i class="bi bi-sun"></i>
         <div id="ball" class='ball'></div>
     </label>
 </div>
 <script>
-// Changes the classes between light and dark mode 
+// Changes the page between light and dark mode
 function goDark() {
-
-    // For the navbar
-    var navbarElement = document.getElementsByTagName("nav")[0]
-    navbarElement.classList.toggle("bg-light"); // Removes light background color
-    navbarElement.classList.toggle("navbar-light"); // 
-    navbarElement.classList.toggle("navbar-dark");
-    navbarElement.classList.toggle("bg-dark");
-    navbarElement.classList.toggle("dark");
-
-    // For the switch
-    var switchBg = document.getElementById("switch")
-    switchBg.classList.toggle("dark")
-
-    // For the ball
-    var switchBall = document.getElementById("ball")
-    switchBall.classList.toggle("dark")
 
     // For the body tag
     var bodyElement = document.body;
     bodyElement.classList.toggle("dark");
 
-    // For the header tag
+    // For the footer tag
     var footerElement = document.getElementsByTagName("footer")[0]
     footerElement.classList.toggle("dark");
     }
