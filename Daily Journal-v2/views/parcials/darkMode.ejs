@@ -1,24 +1,18 @@
 <div class="d-inline darkSwitch">
-<!-- Dark Mode Switch: -->
-<div class="form-check form-switch">
-    <input class="switch-input" type="checkbox" id="switch" onChange="goDark()">
-    <label id="switch" class="switch-label" for="switch">
-        <i class="bi bi-moon"></i>
-        <i class="bi bi-sun"></i>
-        <div id="ball" class='ball'></div>
-    </label>
-</div>
-<script>
-// Changes the page between light and dark mode
-function goDark() {
-
-    // For the body tag
-    var bodyElement = document.body;
-    bodyElement.classList.toggle("dark");
-
-    // For the footer tag
-    var footerElement = document.getElementsByTagName("footer")[0]
-    footerElement.classList.toggle("dark");
-    }
-</script>
+    <!-- Dark Mode Switch: -->
+    <div class="form-check form-switch">
+        <input class="switch-input" type="checkbox" id="switch" onChange="goDark()">
+        <label class="switch-label" for="switch">
+            <i class="bi bi-moon"></i>
+            <i class="bi bi-sun"></i>
+            <div id="ball" class='ball'></div>
+        </label>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    // Changes the page between light and dark mode
+    function goDark() {
+        $("body, footer").toggleClass("dark");
+        }
+    </script>
 </div>
