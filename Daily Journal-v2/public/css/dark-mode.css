@@ -1,5 +1,3 @@
-/* TO DO: Add a texture background for light and another for dark mode or the same for both. */
-
 body {
     transition: background 0.2s linear;
 }
@@ -35,13 +33,13 @@ body.dark a:hover {
     color: #0092B3;
 }
 
-nav.dark {
+body.dark nav {
     background-color: #857F72 !important;
     color: #FAEDF0 !important;
 }
 
-.navbar-nav.dark li a:hover {
-    color: #D9D0BB !important;
+body.dark ul.nav a:hover {
+    color: #0E0801 !important;
 }
 
 footer.dark {
@@ -52,14 +50,14 @@ footer.dark p {
     color: #433E37;
 }
 
-.switch-label.dark {
+/* Start of Dark Switch */
+
+footer.dark .switch-label {
     background-color: #B8B2A7;
 }
 
-.ball.dark {
+footer.dark .ball {
     background-color: #423F3E;
 }
 
-.switch-input:checked+.switch-label .ball {
-    transform: translateX(24px);
-}
+/* End of Dark Switch */
