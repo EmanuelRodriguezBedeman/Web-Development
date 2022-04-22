@@ -17,14 +17,6 @@ body.dark button:hover {
     color: #FAEDF0;
 }
 
-body.dark a{
-    color: #2f4255;
-}
-
-body.dark a:hover{
-    color: #10161c;
-}
-
 body.dark a {
     color: #00A2C7;
 }
@@ -42,21 +34,21 @@ body.dark ul.nav a:hover {
     color: #0E0801 !important;
 }
 
-footer.dark {
+body.dark footer {
     background-color: #B8B2A7;
 }
 
-footer.dark p {
+body.dark footer p {
     color: #433E37;
 }
 
 /* Start of Dark Switch */
 
-footer.dark .switch-label {
+body.dark .switch-label {
     background-color: #B8B2A7;
 }
 
-footer.dark .ball {
+body.dark .ball {
     background-color: #423F3E;
 }
 
