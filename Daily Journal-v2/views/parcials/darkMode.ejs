@@ -1,19 +1,11 @@
 <div class="d-inline darkSwitch">
     <!-- Dark Mode Switch: -->
-    <div class="form-check form-switch">
-        <input class="switch-input" type="checkbox" id="switch" onChange="goDark()">
-        <label class="switch-label" for="switch">
-            <i class="bi bi-moon"></i>
-            <i class="bi bi-sun"></i>
-            <div id="ball" class='ball'></div>
-        </label>
-    </div>
+    <input class="switch-input" type="checkbox" id="switch" onChange="themeToggle()">
+    <label class="switch-label" for="switch">
+        <i class="bi bi-moon"></i>
+        <i class="bi bi-sun"></i>
+        <div id="ball" class='ball'></div>
+    </label>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        // Changes the page between light and dark mode
-        // TO DO: Add code to check the user's current o preferred theme, so the page loads on that style.
-        function goDark() {
-            $("body").toggleClass("dark");
-        }
-    </script>
+    <script src="/js/themeToggle.js"></script>
 </div>
