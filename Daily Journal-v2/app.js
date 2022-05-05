@@ -69,10 +69,30 @@ app.get("/contact", function (req, res) {
     });
 });
 
-app.get("/compose", function (req, res) {
-    res.render("compose", {});
-});
+// Routing of /compose
+app.route("/compose")
 
+    .get(function (req, res) {
+        res.render("compose", {});
+    })
+
+    .post(function (req, res) {
+
+        let newTitle = req.body.newTitle
+        let newContent = req.body.newText
+    
+        const newPost = new Post({
+            title: newTitle,
+            content: newContent
+        });
+    
+        newPost.save(function(err){
+            if (!err) {
+                res.redirect("/");
+            };
+        });
+    });
+    
 app.get("/posts/:postId", function(req, res) {
 
     // Variable to hold the user requested post (URL)
@@ -100,23 +120,6 @@ app.post("/delete", function (req, res) {
         }
     });
 
-});
-
-app.post("/compose", function (req, res) {
-
-    let newTitle = req.body.newTitle
-    let newContent = req.body.newText
-
-    const newPost = new Post({
-        title: newTitle,
-        content: newContent
-    });
-
-    newPost.save(function(err){
-        if (!err) {
-            res.redirect("/");
-        };
-    });
 });
 
 app.listen(3000, function () {
