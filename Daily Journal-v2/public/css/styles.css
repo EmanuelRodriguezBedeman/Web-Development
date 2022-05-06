@@ -51,7 +51,7 @@ button:hover {
     color: #E0E0E0;
 }
 
-/* Start of light switch style */
+/* Start of theme switch style */
 
 .darkSwitch{
     position: absolute;
@@ -119,7 +119,7 @@ button:hover {
 }
 
 .switch-input:checked+.switch-label .ball {
-    transform: translateX(24px);
+    transform: translateX(1.5rem);
 }
 
-/* Light Switch style end */
+/* Theme Switch style end */
