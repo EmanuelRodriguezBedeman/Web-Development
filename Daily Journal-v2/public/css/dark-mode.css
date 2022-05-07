@@ -1,4 +1,4 @@
-body {
+.transition-effect {
     transition: background 0.2s linear;
 }
 
@@ -50,6 +50,20 @@ body.dark-theme .switch-label {
 
 body.dark-theme .ball {
     background-color: #423F3E;
+}
+
+body.dark-theme textarea,
+body.dark-theme textarea:focus,
+body.dark-theme input,
+body.dark-theme input:focus {
+    background-color: #B8B2A7;
+}
+
+body.dark-theme .btn {
+    background-color: #B8B2A7 !important;
+    border-color: #B8B2A7 !important;
+    color: #504A40;
+    font-weight: bold;
 }
 
 /* End of Dark Switch */
