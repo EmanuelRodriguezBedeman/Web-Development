@@ -118,8 +118,8 @@ button:hover {
     top: 50%;
 }
 
-.switch-input:checked+.switch-label .ball {
+/* .switch-input:checked+.switch-label .ball {
     transform: translateX(1.5rem);
-}
+} */
 
 /* Theme Switch style end */
