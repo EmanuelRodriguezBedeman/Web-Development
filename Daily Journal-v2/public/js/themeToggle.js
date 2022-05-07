@@ -3,12 +3,22 @@
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+var lenTransition = 1.5
+
 if (prefersDarkScheme.matches) {
-    $("div.ball").click();
-} else {
-    console.log("Hi!");
-}
+    $("body").toggleClass("transition-effect dark-theme");
+    $("#ball").css('transform',`translateX(${lenTransition}rem)`);
+};
 
 function themeToggle() {
+    $("body").addClass("transition-effect");
     $("body").toggleClass("dark-theme");
-}
+
+    if (lenTransition === 1.5) {
+        lenTransition = 0
+        $("#ball").css('transform',`translateX(${lenTransition}rem)`);       
+    } else if (lenTransition === 0) {
+        lenTransition = 1.5
+        $("#ball").css('transform',`translateX(${lenTransition}rem)`);
+    }
+};
