@@ -5,10 +5,8 @@ const element = $("body");
 let preferenceTheme = localStorage.getItem("preferenceTheme");
 
 /* Summary:
-* Checks if the user has a preferrence, if not checks the OS Theme
-* and assigns that theme to the page. 
-* 
-* 
+* Checks if the user has a theme preferrence, saved from previous visits
+* if not, checks his OS theme and matches the website with it.
 */
 
 if (preferenceTheme === null && osThemeDark || preferenceTheme === "dark") {
@@ -28,10 +26,10 @@ function themeToggle() {
 
     element.toggleClass("dark-theme");
 
-    let preferenceTheme = localStorage.getItem("preferenceTheme")
+    let preferenceTheme = localStorage.getItem("preferenceTheme");
 
     if (element.hasClass("transition-effect") === false) {
-        element.addClass("transition-effect")
+        element.addClass("transition-effect");
     };
  
     if (preferenceTheme === "dark") {
