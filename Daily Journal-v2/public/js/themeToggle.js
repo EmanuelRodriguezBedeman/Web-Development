@@ -12,10 +12,9 @@ let preferenceTheme = localStorage.getItem("preferenceTheme");
 */
 
 if (preferenceTheme === null && osThemeDark || preferenceTheme === "dark") {
-    element.addClass("dark-theme");
-    moveSwitch("1.5", "dark");
+    changeTheme("1.5", "dark");
 } else {
-    moveSwitch("0", "light");
+    changeTheme("0", "light");
 };
 
 /* Summary:
@@ -36,14 +35,20 @@ function themeToggle() {
     };
  
     if (preferenceTheme === "dark") {
-        moveSwitch("0", "light");
+        changeTheme("0", "light");
     } else if (preferenceTheme === "light" || osThemeDark != true) {
-        moveSwitch("1.5", "dark");
+        changeTheme("1.5", "dark");
     };
 };
 
 // Function to move the switch when loading one of the themes.
-function moveSwitch(position, theme) {
-    $("#ball").css('transform',`translateX(${position}rem)`);
+function changeTheme(switchPosition, theme) {
+    $("#ball").css('transform',`translateX(${switchPosition}rem)`);
     localStorage.setItem("preferenceTheme", theme);
+
+    if (theme === "dark") {
+        element.addClass("dark-theme");
+    } else {
+        element.removeClass("dark-theme");
+    }
 };
