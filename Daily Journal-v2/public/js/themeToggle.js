@@ -35,7 +35,6 @@ function themeToggle() {
     }
 };
 
-
 // Function to move the switch when loading on of the themes.
 function moveSwitch(position) {
     $("#ball").css('transform',`translateX(${position})`);
