@@ -1,31 +1,28 @@
 // Changes the page between light and dark mode
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-const element = $("body")
+const osThemeDark = matchMedia("(prefers-color-scheme: dark)").matches; // Returns boolean
+const element = $("body");
 
-if (prefersDarkScheme.matches) {
-    element.toggleClass("dark-theme");
-    moveSwitch("1.5rem")
+if (localStorage.getItem("preferredTheme") === "dark" || osTheme.matches) {
+    element.addClass("dark-theme");
+    moveSwitch("1.5rem");
+} else {
+    localStorage.setItem("preferredTheme", "light");
 };
 
 function themeToggle() {
     element.addClass("transition-effect");
     element.toggleClass("dark-theme");
 
-    if (element.hasClass("dark-theme")) {
-        moveSwitch("1.5rem")
+    if (localStorage.getItem("preferredTheme") === "dark") {
+        moveSwitch("0rem");
+        localStorage.setItem("preferredTheme", "light");
     } else {
-        moveSwitch("0rem")
+        moveSwitch("1.5rem");
+        localStorage.setItem("preferredTheme", "dark");
     }
 };
 
 function moveSwitch(position) {
     $("#ball").css('transform',`translateX(${position})`);
-}
-
-/*
-TO DO:
-* Check the user's OS theme only on first conection
-* After that, check how the user's chosen theme by interacting with the switch
-* Save the behavior inside a variable to keep track of it and mantain the selection though the whole page. 
-*/
+};
