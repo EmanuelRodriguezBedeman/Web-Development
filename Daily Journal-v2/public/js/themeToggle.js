@@ -3,17 +3,22 @@
 const osThemeDark = matchMedia("(prefers-color-scheme: dark)").matches; // Returns boolean
 const element = $("body");
 
+var currentTheme = localStorage.getItem("preferredTheme")
+
 /* Summary:
-* Checks if the user has a theme preferrence or his OS theme
-* After that, sets the right theme for him 
+* Checks if the user has a preferrence, if not checks the OS Theme
+* and assigns that theme to the page. 
+* 
+* 
 */
 
-if (localStorage.getItem("preferredTheme") === "dark" || osTheme.matches) {
+if (currentTheme === null && osThemeDark) {
     element.addClass("dark-theme");
     moveSwitch("1.5rem");
-} else {
-    localStorage.setItem("preferredTheme", "light");
-};
+} else if (currentTheme === "dark") {
+    element.addClass("dark-theme");
+    moveSwitch("1.5rem");
+}
 
 /* Summary
 * Function for the switch button
@@ -26,13 +31,17 @@ function themeToggle() {
     element.addClass("transition-effect");
     element.toggleClass("dark-theme");
 
-    if (localStorage.getItem("preferredTheme") === "dark") {
+    var currentTheme = localStorage.getItem("preferredTheme")
+    
+    if (currentTheme === "dark" || osThemeDark) {
         moveSwitch("0rem");
         localStorage.setItem("preferredTheme", "light");
-    } else {
+        console.log("If executed");
+    } else if (currentTheme === "light" || osThemeDark != true) {
         moveSwitch("1.5rem");
         localStorage.setItem("preferredTheme", "dark");
-    }
+        console.log("else if executed");
+    } 
 };
 
 // Function to move the switch when loading on of the themes.
