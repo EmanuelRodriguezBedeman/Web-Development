@@ -10,9 +10,9 @@ let preferenceTheme = localStorage.getItem("preferenceTheme");
 */
 
 if (preferenceTheme === null && osThemeDark || preferenceTheme === "dark") {
-    changeTheme("1.5", "dark");
+    changeTheme("dark", "1.5");
 } else {
-    changeTheme("0", "light");
+    changeTheme("light", "0");
 };
 
 /* Summary:
@@ -24,8 +24,6 @@ if (preferenceTheme === null && osThemeDark || preferenceTheme === "dark") {
 
 function themeToggle() {
 
-    element.toggleClass("dark-theme");
-
     let preferenceTheme = localStorage.getItem("preferenceTheme");
 
     if (element.hasClass("transition-effect") === false) {
@@ -33,14 +31,14 @@ function themeToggle() {
     };
  
     if (preferenceTheme === "dark") {
-        changeTheme("0", "light");
+        changeTheme("light", "0");
     } else if (preferenceTheme === "light" || osThemeDark != true) {
-        changeTheme("1.5", "dark");
+        changeTheme("dark", "1.5");
     };
 };
 
 // Function to move the switch when loading one of the themes.
-function changeTheme(switchPosition, theme) {
+function changeTheme(theme, switchPosition) {
     $("#ball").css('transform',`translateX(${switchPosition}rem)`);
     localStorage.setItem("preferenceTheme", theme);
 
