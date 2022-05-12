@@ -122,6 +122,7 @@ app.post("/delete", function (req, res) {
 
 });
 
+// Added a log just to click-open the site
 app.listen(3000, function () {
     console.log(`Server started on http://localhost:${port}\n`);
 });
