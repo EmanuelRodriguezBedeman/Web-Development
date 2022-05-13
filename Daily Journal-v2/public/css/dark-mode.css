@@ -34,20 +34,6 @@ body.dark-theme ul.nav a:hover {
     color: #0E0801 !important;
 }
 
-body.dark-theme footer {
-    background-color: #B8B2A7;
-}
-
-body.dark-theme footer p {
-    color: #433E37;
-}
-
-/* Start of Dark-theme Switch */
-
-body.dark-theme .switch-label {
-    background-color: #B8B2A7;
-}
-
 body.dark-theme .ball {
     background-color: #423F3E;
 }
@@ -64,6 +50,20 @@ body.dark-theme .btn {
     border-color: #B8B2A7 !important;
     color: #504A40;
     font-weight: bold;
+}
+
+body.dark-theme footer {
+    background-color: #B8B2A7;
+}
+
+body.dark-theme footer p {
+    color: #433E37;
+}
+
+/* Start of Dark-theme Switch */
+
+body.dark-theme .switch-label {
+    background-color: #B8B2A7;
 }
 
 /* End of Dark Switch */
