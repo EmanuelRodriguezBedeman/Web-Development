@@ -2,7 +2,7 @@
 
 <article>
     <div class="my-3">
-        <h1 class="d-inline"><%= postInfo.title %></h1>
+        <h1 class="d-inline mt-5"><%= postInfo.title %></h1>
         <form class="d-inline" action="/delete" method="post">
             <button type="submit" name="deleteButton" value="<%= postInfo._id %>" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete Journal">
                 <i class="bi bi-trash" data-toggle="tooltip"></i>
