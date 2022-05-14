@@ -34,6 +34,14 @@ body.dark-theme ul.nav a:hover {
     color: #0E0801 !important;
 }
 
+body.dark-theme .dropdown-menu-dark {
+    background-color: #625D52;
+}
+
+body.dark-theme .dropdown-item{
+    color: #FAEDF0
+}
+
 body.dark-theme .ball {
     background-color: #423F3E;
 }
