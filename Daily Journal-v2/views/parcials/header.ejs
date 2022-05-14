@@ -13,6 +13,8 @@
     <title>Daily Journal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/dark-mode.css">
@@ -25,8 +27,21 @@
                 <span class="navbar-brand h1">DAILY JOURNAL</span>
             </div>
 
-            <!-- Navbar content -->
-            <ul class="nav navbar-nav navbar-right">
+            <!-- Dropdown Navbar Content-->
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/">Home</a></li>
+                    <li><a class="dropdown-item" href="/compose">Compose</a></li>
+                    <li><a class="dropdown-item" href="/about">About Us</a></li>
+                    <li><a class="dropdown-item" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Large Navbar content -->
+            <ul class="nav navbar-nav navbar-right large-navbar-items">
                 <li class="nav-item" id="home"><a class="nav-link" href="/">HOME</a></li>
                 <div class="vr mx-2 opacity-25"></div>
                 <li class="nav-item" id="about"><a class="nav-link" href="/compose">COMPOSE</a></li>
