@@ -2,6 +2,7 @@
 <article>
     <h1 class="my-3">Home</h1>
     <p><%=startingContent %></p>
+    <hr class="text-primary opacity-25">
 </article>
     <% newEntries.forEach(function(entry) { %>
         <article>
@@ -29,6 +30,7 @@
                 </p>
             </article>
             <% } %>
+            <hr class="text-secondary opacity-25">
         <% }); %>
 
 <%- include("parcials/footer") -%>
