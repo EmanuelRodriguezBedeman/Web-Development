@@ -34,12 +34,17 @@ body.dark-theme ul.nav a:hover {
     color: #0E0801 !important;
 }
 
-body.dark-theme .dropdown-menu-dark {
+body.dark-theme .dropdown-menu {
     background-color: #625D52;
 }
 
 body.dark-theme .dropdown-item{
-    color: #FAEDF0
+    color: #FAEDF0;
+}
+
+body.dark-theme .dropdown-item:hover {
+    color: #FAEDF0;
+    background-color: #27241D;
 }
 
 body.dark-theme .ball {
@@ -72,6 +77,14 @@ body.dark-theme footer p {
 
 body.dark-theme .switch-label {
     background-color: #B8B2A7;
+}
+
+body.dark-theme .btn-circle.btn-sm {
+    background-color: white !important;
+}
+
+body.dark-theme .bi-lightbulb {
+    color: black;
 }
 
 /* End of Dark Switch */
