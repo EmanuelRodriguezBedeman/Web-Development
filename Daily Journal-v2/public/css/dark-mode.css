@@ -7,6 +7,10 @@ body.dark-theme {
     color: #B8B2A7;
 }
 
+body.dark-theme .text-primary{
+    background-color: #E8E6E1 !important;
+}
+
 body.dark-theme button {
     color: #999999;
     background-color: #27241D;
