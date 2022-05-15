@@ -40,10 +40,24 @@
     margin-bottom: 0;
     font-size: 0.75rem;
     letter-spacing: 0.313rem;
+    background-color: #2f4255 !important;
+}
+
+.navbar-brand {
+    color: #E0E0E0 !important;
+}
+
+div .vr {
+    color: #E0E0E0 !important
+}
+
+.navbar-light ul.nav a {
+    color: #E0E0E0 !important;
 }
 
 .navbar-light ul.nav a:hover {
-    color: #2f4255 !important;
+    /* color: #2f4255 !important; */
+    color: #999999 !important;
 }
 
 body {
