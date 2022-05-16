@@ -24,7 +24,7 @@ main().catch(err => console.log(err));
 // connect to MongoDB by specifying the server port
 // if the database doesn't exist, it is created.
 async function main() {
-    await mongoose.connect('mongodb+srv://Manuhs:test753@cluster0.lsmku.mongodb.net/todolistDB');
+    await mongoose.connect('mongodb+srv://<user>:<password>@cluster0.lsmku.mongodb.net/todolistDB');
 };
 
 // create a SCHEMA that sets out the fields each document will have and their datatypes
