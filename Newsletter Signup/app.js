@@ -72,10 +72,3 @@ app.post("/", function (req, res) {
 app.post("/failure", function(req, res){
     res.redirect("/");
 });
-
-/* Api Key:
-26610cfd071b297c52dd4f59b3b3410f-us20 
-
-Audience ID:
-a1baf85574
-*/
