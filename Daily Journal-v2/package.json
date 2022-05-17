@@ -1,19 +1,24 @@
 {
-  "name": "ejs-challenge",
+  "name": "daily-journal-upgraded",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project made to show my skills on MongoDB, JS, CSS and Bootstrap",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Emanuel",
   "license": "ISC",
+  "engines": {
+    "node": "16.14.2"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "bootstrap-icons": "^1.8.1",
-    "ejs": "^2.6.1",
+    "ejs": "^3.1.7",
     "express": "^4.16.3",
+    "git": "^0.1.5",
     "lodash": "^4.17.21",
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
   }
 }
