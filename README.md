@@ -18,3 +18,5 @@ Click on the name of the project to check it out!
  - [Newsletter Subscription Webapp example](https://newsletter-signup753.herokuapp.com/) 🗞📰 (_Made with: Weather API, Express, Node.js, JQuery, JS, CSS, HTML_)
 
  - [To Do List Webapp](https://todolist-erb.herokuapp.com/) 📝 (_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, CSS, HTML_)
+
+ - [Daily Journal V2](https://daily-journalv2.herokuapp.com/) 📄(_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, Bootstrap, CSS and HTML_)
