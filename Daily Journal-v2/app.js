@@ -13,13 +13,17 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
+app.listen(process.env.PORT || 3000, function () {
+    console.log(`The server launched in http://localhost:3000`);
+});
+
 // for catching errors
 main().catch(err => console.log(err));
 
 // connect to MongoDB by specifying the server port
 // if the database doesn't exist, it is created.
 async function main() {
-    await mongoose.connect('mongodb://localhost:27017/PostsDB');
+    await mongoose.connect('mongodb+srv://<admin>:<password>@cluster0.lsmku.mongodb.net/PostsDB');
 };
 
 // Creates the schema of the DB
@@ -122,7 +126,9 @@ app.post("/delete", function (req, res) {
 
 });
 
-// Added a log just to click-open the site
-app.listen(3000, function () {
-    console.log(`Server started on http://localhost:${port}\n`);
+// To stop the request for a favicon
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
+app.get("/favicon.ico", function (req, res) {
+    res.send("working");
 });
