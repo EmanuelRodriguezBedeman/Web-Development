@@ -15,7 +15,7 @@ Click on the name of the project to check it out!
 
  - Play [Simon Game](https://emanuelrodriguezbedeman.github.io/Web-Development/Simon%20Game/index.html) 🗣 (_Made with: JQuery, JS, CSS, HTML_)
 
- - [Newsletter Subscription Webapp example](https://newsletter-signup753.herokuapp.com/) 🗞📰 (_Made with: Weather API, Express, Node.js, JQuery, JS, CSS, HTML_)
+ - [Newsletter Subscription Webapp example](https://newsletter-signup753.herokuapp.com/) 🗞📰 (_Made with: Mailchimp API, Express, Node.js, JQuery, JS, CSS, HTML_)
 
  - [To Do List Webapp](https://todolist-erb.herokuapp.com/) 📝 (_Made with: Mongoose, Lodash, Express, Node.js, JQuery, JS, CSS, HTML_)
 
