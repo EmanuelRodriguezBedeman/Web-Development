@@ -1,5 +1,5 @@
 # _Table of content._
-Projects made while I'm doing a Web Development bootcamp by Angela Yu.
+Projects I made while in the Web Development bootcamp by Angela Yu
 
 Click on the name of the project to check it out!
 
