@@ -1,1 +1,1 @@
-files for newsletter website
+Server files for newsletter website
