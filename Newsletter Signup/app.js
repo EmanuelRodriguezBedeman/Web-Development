@@ -1,6 +1,6 @@
-//Requiring mailchimp's module
-//For this we need to install the npm module @mailchimp/mailchimp_marketing. To do that we write:
-//npm install @mailchimp/mailchimp_marketing
+// Requiring mailchimp's module
+// Install the npm module 
+// npm install @mailchimp/mailchimp_marketing
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const express = require("express");
 const bodyParser = require("body-parser");
