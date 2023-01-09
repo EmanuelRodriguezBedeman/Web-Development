@@ -7,6 +7,11 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
+// Use the .env file
+require("dotenv").config()
+const MAILCHIMP_KEY = process.env.MAILCHIMP_KEY
+const MAILCHIMP_SERVER = process.env.MAILCHIMP_SERVER
+
 // Sets the static folder (see app.get comment)
 app.use(express.static("public"));
 
@@ -29,10 +34,8 @@ app.get("/", function (req, res) {
 
 //Setting up MailChimp
 mailchimp.setConfig({
-    //*****************************ENTER YOUR API KEY HERE******************************
-    apiKey: "API-KEY",
-    //*****************************ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER******************************
-    server: "PREFIX"
+    apiKey: MAILCHIMP_KEY,
+    server: MAILCHIMP_SERVER
 });
 //As soon as the sign in button is pressed execute this
 app.post("/", function (req, res) {
