@@ -37,23 +37,25 @@ mailchimp.setConfig({
     apiKey: MAILCHIMP_KEY,
     server: MAILCHIMP_SERVER
 });
-//As soon as the sign in button is pressed execute this
+
+// As soon as the sign in button is pressed execute this
 app.post("/", function (req, res) {
-    //*****************************CHANGE THIS ACCORDING TO THE VALUES YOU HAVE ENTERED IN THE INPUT ATTRIBUTE IN HTML******************************
+    // Requiring parameters
     const firstName = req.body.firstName;
     const secondName = req.body.lastName;
     const email = req.body.email;
 
-    console.log(`Name is: ` + firstName + `\nLast name is: ` + secondName + `\nemail is: ` + email);
-    //*****************************ENTER YOU LIST ID HERE******************************
+    // List ID
     const listId = "a1baf85574";
-    //Creating an object with the users data
+    
+    // Object with user data
     const subscribingUser = {
         firstName: firstName,
         lastName: secondName,
         email: email
     };
-    //Uploading the data to the server
+    
+    // Uploading the data to the server
     async function run() {
         const response = await mailchimp.lists.addListMember(listId, {
             email_address: subscribingUser.email,
@@ -63,11 +65,11 @@ app.post("/", function (req, res) {
                 LNAME: subscribingUser.lastName
             }
         });
-        //If all goes well logging the contact's id
+        
+        // If succeeded 
         res.sendFile(__dirname + "/success.html")
-        console.log(`Successfully added contact as an audience member. The contact's id is ${response.id}.`);
     }
-    //Running the function and catching the errors (if any)
+    // Running the function and catching the errors (if any)
     run().catch(e => res.sendFile(__dirname + "/failure.html"));
 });
 
