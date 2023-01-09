@@ -1,6 +1,8 @@
-<h1 align="center">Newsletter Signup</h1>
+<div align="center">
+  <h1>Newsletter Signup</h1>
 
-<p align="center">On this webapp example, you can create a subscription to a newsletter though email using Node.js and Mailchimp.</p>
+  <p align="center">On this webapp example, you can create a subscription to a newsletter though email using Node.js and Mailchimp.</p>
+</div>
 
 </br>
 
