@@ -82,7 +82,6 @@ app.get("/", function (req, res) {
                     console.log(err);
                     console.log(docs);
                 } else {
-                    console.log("Items Succesfully added");
                     res.redirect("/");
                 }
             });
@@ -106,8 +105,6 @@ app.get("/:CustomList", function (req, res) {
         } else {
             // Check if the custom list exists:
             if (!foundList) {
-                console.log("List " + CustomListName + " DOEST NOT exist");
-
                 // Creates the custom list: 
                 const list = new List({
                     name: CustomListName,
@@ -119,8 +116,6 @@ app.get("/:CustomList", function (req, res) {
                 res.redirect("/" + CustomListName);
 
             } else {
-                console.log("List " + CustomListName + " EXISTS!");
-
                 // Show an existing list
                 res.render("list", {
                     listTitle: foundList.name,
@@ -182,7 +177,6 @@ app.post("/delete", function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                console.log("Succesfully deleted the item.");
                 res.redirect("/");
             }
         });
