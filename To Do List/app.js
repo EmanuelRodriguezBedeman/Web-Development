@@ -15,6 +15,9 @@ const MONGODB_NAME = process.env.MONGODB_NAME
 
 const mongodb_url = "mongodb+srv://" + MONGODB_USER + ":" + MONGODB_PASSWORD + "@cluster0.lsmku.mongodb.net/" + MONGODB_NAME
 
+// Avoid deprecation warning:
+mongoose.set('strictQuery', false);
+
 app.listen(process.env.PORT || port, function() {
     console.log("Server started succesfully");
 });
