@@ -7,6 +7,14 @@ const _ = require('lodash');
 const app = express();
 let port = 3000;
 
+// Use .env file
+require("dotenv").config()
+const MONGODB_USER = process.env.MONGODB_USER
+const MONGODB_PASSWORD = process.env.MONGODB_PASSWORD
+const MONGODB_NAME = process.env.MONGODB_NAME
+
+const mongodb_url = "mongodb+srv://" + MONGODB_USER + ":" + MONGODB_PASSWORD + "@cluster0.lsmku.mongodb.net/" + MONGODB_NAME
+
 app.listen(process.env.PORT || port, function() {
     console.log("Server started succesfully");
 });
@@ -24,7 +32,7 @@ main().catch(err => console.log(err));
 // connect to MongoDB by specifying the server port
 // if the database doesn't exist, it is created.
 async function main() {
-    await mongoose.connect('mongodb+srv://<user>:<password>@cluster0.lsmku.mongodb.net/todolistDB');
+    await mongoose.connect(mongodb_url);
 };
 
 // create a SCHEMA that sets out the fields each document will have and their datatypes
