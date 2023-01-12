@@ -15,12 +15,10 @@ const MONGODB_NAME = process.env.MONGODB_NAME
 
 const mongodb_url = "mongodb+srv://" + MONGODB_USER + ":" + MONGODB_PASSWORD + "@cluster0.lsmku.mongodb.net/" + MONGODB_NAME
 
-// Avoid deprecation warning:
+// Avoid deprecation:
 mongoose.set('strictQuery', false);
 
-app.listen(process.env.PORT || port, function() {
-    console.log("Server started succesfully");
-});
+app.listen(process.env.PORT || port, function() {});
 
 app.set('view engine', 'ejs');
 
@@ -29,17 +27,16 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-// for catching errors
+// Catching errors
 main().catch(err => console.log(err));
 
 // connect to MongoDB by specifying the server port
-// if the database doesn't exist, it is created.
+// if the database doesn't exist, it'll be created.
 async function main() {
     await mongoose.connect(mongodb_url);
 };
 
-// create a SCHEMA that sets out the fields each document will have and their datatypes
-// for each field, inside the brackets, is the validation function that the field has.
+// Create an SCHEMA that sets out the fields for each document and their datatypes
 const itemsSChema = new mongoose.Schema({
     name: {
         type: String,
