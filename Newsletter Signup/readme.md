@@ -2,6 +2,8 @@
   <h1>Newsletter Signup</h1>
 
   <p align="center">On this webapp example, you can create a subscription to a newsletter though email using Node.js and Mailchimp.</p>
+  
+  ![image](https://user-images.githubusercontent.com/93904438/212150192-6b68ed67-06cc-46cf-838e-f61768a9194c.png)
 </div>
 
 </br>
