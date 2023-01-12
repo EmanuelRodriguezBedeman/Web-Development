@@ -8,6 +8,12 @@
 
 </div>
 
+</br>
+
+---
+
+</br>
+
 ### How to set it up:
 1. Run `npm install` on your terminal
 2. Create your account locally in mongoose or online in [MongoDB Atlas](https://www.mongodb.com/atlas/database)
@@ -22,7 +28,7 @@ MONGODB_PASSWORD=USER-PASSWORD
 MONGODB_NAME=DB-NAME
 ```
 
-> Replace "MONGODB_USER", "MONGODB_PASSWORD" and MONGODB_NAME for the respectively fields.
+> Replace "MONGODB_USER", "MONGODB_PASSWORD" and "MONGODB_NAME" for the respective fields.
 
 4. Install dotenv package using `npm install dotenv --save` on the terminal.
 
