@@ -31,5 +31,3 @@ MONGODB_NAME=DB-NAME
 > Replace "USER-NAME", "USER-PASSWORD" and "DB-NAME" for the respective fields.
 
 4. Install dotenv package using `npm install dotenv --save` on the terminal.
-
-5. If you want to make it functional, remember to configure your Mailchimp settings.
