@@ -1,12 +1,18 @@
 <div align="center">
 
-<h1><a href="">Daily Journal</a></h1>
+    <h1><a href="">Daily Journal</a></h1>
 
-![image](https://user-images.githubusercontent.com/93904438/212163819-e2f4a789-f810-4938-97df-4de942f8fdf6.png)
+    ![image](https://user-images.githubusercontent.com/93904438/212163819-e2f4a789-f810-4938-97df-4de942f8fdf6.png)
 
-<p>Daily Journal Webapp, made using Node.js and Mongoose</p>
+    <p>Daily Journal Webapp, made using Node.js and Mongoose</p>
 
 </div>
+
+</br>
+
+---
+
+</br>
 
 - Main features:
 
