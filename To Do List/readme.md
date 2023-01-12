@@ -8,3 +8,22 @@
 
 </div>
 
+### How to set it up:
+1. Run `npm install` on your terminal
+2. Create your account locally in mongoose or online in [MongoDB Atlas](https://www.mongodb.com/atlas/database)
+3. Create an authorised user in MongoDB Atlas
+4. Store your USER, PASSWORD, DB NAME inside an .env file
+
+It should look something like this:
+
+```
+MONGODB_USER=USER-NAME
+MONGODB_PASSWORD=USER-PASSWORD
+MONGODB_NAME=DB-NAME
+```
+
+> Replace "MONGODB_USER", "MONGODB_PASSWORD" and MONGODB_NAME for the respectively fields.
+
+4. Install dotenv package using `npm install dotenv --save` on the terminal.
+
+5. If you want to make it functional, remember to configure your Mailchimp settings.
