@@ -28,7 +28,7 @@ MONGODB_PASSWORD=USER-PASSWORD
 MONGODB_NAME=DB-NAME
 ```
 
-> Replace "MONGODB_USER", "MONGODB_PASSWORD" and "MONGODB_NAME" for the respective fields.
+> Replace "USER-NAME", "USER-PASSWORD" and "DB-NAME" for the respective fields.
 
 4. Install dotenv package using `npm install dotenv --save` on the terminal.
 
