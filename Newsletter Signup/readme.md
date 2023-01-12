@@ -20,7 +20,7 @@ MAILCHIMP_KEY=YOUR_API_KEY
 MAILCHIMP_SERVER=YOUR_SERVER_ID
 ```
 
-> Change "YOUR_API_KEY" and "YOUR_SERVER_ID" for your API-KEY and SERVER-ID respectively.
+> Replace "YOUR_API_KEY" and "YOUR_SERVER_ID" for your API-KEY and SERVER-ID respectively.
 
 4. Install dotenv package using `npm install dotenv --save` on the terminal
 
