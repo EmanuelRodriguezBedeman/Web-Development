@@ -1,4 +1,4 @@
-<div>
+<div align="center">
 
 <h1><a href="https://to-do-list-nsdh.onrender.com/">To Do List</a></h1>
 
