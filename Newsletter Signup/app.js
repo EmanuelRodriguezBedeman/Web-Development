@@ -12,7 +12,7 @@ require("dotenv").config()
 const MAILCHIMP_KEY = process.env.MAILCHIMP_KEY
 const MAILCHIMP_SERVER = process.env.MAILCHIMP_SERVER
 
-// Sets the static folder (see app.get comment)
+// Sets the static folder
 app.use(express.static("public"));
 
 // Fetches the data from the Website
@@ -20,14 +20,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// Makes the server listens to a port
-app.listen(process.env.PORT || port, function () {
-    console.log(`The server launched in http://localhost:${port}`);
-});
+// Server listens to a port
+app.listen(process.env.PORT || port, function () {});
 
-// Get the request to the server and respond
-// This file by itself won't work, because it requires static files (css and images)
-// That's why we use express to get those static files from a folder, in this case called "public"
+// Get request
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/signup.html");
 });
@@ -38,7 +34,7 @@ mailchimp.setConfig({
     server: MAILCHIMP_SERVER
 });
 
-// As soon as the sign in button is pressed execute this
+// Post request for the sign up button
 app.post("/", function (req, res) {
     // Requiring parameters
     const firstName = req.body.firstName;
