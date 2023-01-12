@@ -14,16 +14,40 @@
 
 </br>
 
-- Main features:
+### Main features:
 
-    -> New Styling
+   * Uses a database (mongoose) instead of JavaScript variables.
+    
+   * Allows to delete an entire entry by just hitting the trash icon next to the title, removing it from the database.
+    
+   * New navbar buttons to navigate faster and easier though the website.
+    
+   * **Theme Switch button**, which alternates between Light ☀ and Dark 🌙 themes.
+    
+   * Now the page has responsiveness. It adapts depending on the device.
 
-    -> It uses a database (mongoose) instead of JavaScript variables
-    
-    -> Allows to delete an entire entry by just hitting the trash icon next to the entry title, also removes it from the database
-    
-    -> New home buttons to navigate faster though the page
-    
-    -> Added a new Toggle Dark Mode button, which changes the colors of the Web App to a darker theme easier for the eyes to read.
-    
-    -> Now the page has responsiveness, it can be openend on screens smaller than 902px and the page will automatically change for the device, turning the navigation bar        into a dropdown and the switch changes into a light bulb.
+</br>
+
+---
+
+</br>
+
+### How to set it up:
+1. Run `npm install` on your terminal
+2. Create your account locally in mongoose or online in [MongoDB Atlas](https://www.mongodb.com/atlas/database)
+3. Create an authorised user in MongoDB Atlas
+4. Store your USER, PASSWORD, DB NAME inside an .env file
+
+It should look something like this:
+
+```
+MONGODB_USER=USER-NAME
+MONGODB_PASSWORD=USER-PASSWORD
+MONGODB_NAME=DB-NAME
+```
+
+> Replace "USER-NAME", "USER-PASSWORD" and "DB-NAME" for the respective fields.
+
+4. Install dotenv package using `npm install dotenv --save` on the terminal.
+
+5. If you want to make it functional, remember to configure your Mailchimp settings.
