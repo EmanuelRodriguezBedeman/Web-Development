@@ -1,1 +1,0 @@
-Newsletter website's logo
