@@ -24,6 +24,8 @@ if (preferenceTheme === null && osThemeDark || preferenceTheme === "dark") {
 
 function themeToggle() {
 
+    element.toggleClass("dark-theme");
+
     let preferenceTheme = localStorage.getItem("preferenceTheme");
 
     if (element.hasClass("transition-effect") === false) {
@@ -42,5 +44,9 @@ function changeTheme(theme, switchPosition) {
     $("#ball").css('transform',`translateX(${switchPosition}rem)`);
     localStorage.setItem("preferenceTheme", theme);
 
-    element.toggleClass("dark-theme");
+    if (theme === "dark") {
+        element.addClass("dark-theme");
+    } else {
+        element.removeClass("dark-theme");
+    }
 };
