@@ -42,9 +42,5 @@ function changeTheme(theme, switchPosition) {
     $("#ball").css('transform',`translateX(${switchPosition}rem)`);
     localStorage.setItem("preferenceTheme", theme);
 
-    if (theme === "dark") {
-        element.addClass("dark-theme");
-    } else {
-        element.removeClass("dark-theme");
-    }
+    element.toggleClass("dark-theme");
 };
